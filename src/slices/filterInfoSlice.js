@@ -4,19 +4,19 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = { nowShowing: 'all' };
 
 const filterInfoSlice = createSlice({
-  name: 'filterInfo',
-  initialState,
-  reducers: {
-    showAll: (state) => {
-      state.nowShowing = 'all';
+    name: 'filterInfo',
+    initialState,
+    reducers: {
+        showAll: (state) => {
+            state.nowShowing = 'all';
+        },
+        showCompleted: (state) => {
+            state.nowShowing = 'completed';
+        },
+        showActive: (state) => {
+            state.nowShowing = 'active';
+        },
     },
-    showCompleted: (state) => {
-      state.nowShowing = 'completed';
-    },
-    showActive: (state) => {
-      state.nowShowing = 'active';
-    },
-  },
 });
 
 export const filterInfoSelector = (state) => state.filterInfo;
