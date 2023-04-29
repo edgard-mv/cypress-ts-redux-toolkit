@@ -54,7 +54,11 @@ const ToDoItem = ({ value }) => {
                 onChange={handleChange}
             />
             {removeButton ? (
-                <Button variant="danger" onClick={handleRemoveTask(id)}>
+                <Button
+                    variant="danger"
+                    data-testid="removeTaskButton"
+                    onClick={handleRemoveTask(id)}
+                >
                     X
                 </Button>
             ) : null}

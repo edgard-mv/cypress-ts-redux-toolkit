@@ -1,6 +1,7 @@
 env:
   browser: true
   es2021: true
+  cypress/globals: true
 
 extends:
   - airbnb
@@ -8,6 +9,7 @@ extends:
   - plugin:functional/recommended
   - plugin:react-hooks/recommended
   - prettier
+  - cypress
 
 parserOptions:
   ecmaFeatures:

@@ -26,7 +26,7 @@ const ToDoList = () => {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-12 col-md-8 mt-1">
-                    <ListGroup>
+                    <ListGroup data-testid="listGroup">
                         {tasksForRender.map((task) => (
                             <ToDoItem key={_uniqueId('key-')} value={task} />
                         ))}
